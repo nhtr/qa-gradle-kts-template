@@ -1,0 +1,27 @@
+[
+  {
+    "id": "basic_10pct",
+    "input": {
+      "price": 100.0,
+      "rate": 0.1,
+      "demo": 1.3
+    },
+    "expected": 90.0
+  },
+  {
+    "id": "no_discount",
+    "input": {
+      "price": 50.0,
+      "rate": 0.0
+    },
+    "expected": 50.0
+  },
+  {
+    "id": "invalid_rate",
+    "input": {
+      "price": 10.0,
+      "rate": 1.5
+    },
+    "raises": "java.lang.IllegalArgumentException"
+  }
+]
